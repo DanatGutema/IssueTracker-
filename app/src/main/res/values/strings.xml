@@ -1,0 +1,251 @@
+<resources>
+    <string name="app_name">Issue Tracker</string>
+    <!-- this is for the roles in registration-->
+    <string-array name="roles">
+        <item>Select Role</item>
+        <item>Department Manager</item>
+        <item>Division Manager</item>
+        <item>Section Manager</item>
+        <item>Software Engineer</item>
+
+    </string-array>
+
+    <!-- this is for the roles in admin-->
+    <string-array name="rolesAdmin">
+        <item>Select Role</item>
+        <item>Admin</item>
+        <item>Department Manager</item>
+        <item>Division Manager</item>
+        <item>Section Manager</item>
+        <item>Software Engineer</item>
+
+    </string-array>
+
+    <string-array name="dept">
+        <item>Select Department</item>
+        <item>PSS</item>
+    </string-array>
+
+    <!--    admin dept-->
+    <string-array name="deptAdmin">
+        <item>Select Department</item>
+        <item>PSS</item>
+        <item>Admin</item>
+    </string-array>
+
+
+    <string-array name="type">
+        <item>Select Type</item>
+        <item>Project</item>
+        <item>Support</item>
+        <item>In-house Project</item>
+    </string-array>
+
+    <string-array name="section">
+        <item>Select Section</item>
+        <item>Professional Services Solution</item>
+        <item>POS/TOMS</item>
+        <item>ATM/ITM/Bulk....</item>
+        <item>Voice Guidance/CVM</item>
+        <item>Axis Camera/Vision</item>
+        <item>Digital Banking Solution Division</item>
+        <item>Self Service Solution Division</item>
+    </string-array>
+
+    <!--    admin section-->
+    <string-array name="sectionAdmin">
+        <item>Select Section</item>
+        <item>Professional Services Solution</item>
+        <item>POS/TOMS</item>
+        <item>ATM/ITM/Bulk....</item>
+        <item>Voice Guidance/CVM</item>
+        <item>Axis Camera/Vision</item>
+        <item>Digital Banking Solution Division</item>
+        <item>Self Service Solution Division</item>
+        <item>Admin</item>
+    </string-array>
+
+    <string-array name="MachineTypeDigitalBanking">
+        <item>Select Machine Type/Software</item>
+        <item>POS Development</item>
+        <item>TOMS Monitoring</item>
+        <item>Axis Security Camera</item>
+        <item>Card Personnel</item>
+        <item>ITM Instant Issuance</item>
+        <item>PIN Maller</item>
+        <item>Check Scanner</item>
+        <item>APTRA Vision (Server Side)</item>
+        <item>TMS Monitoring Tool</item>
+
+    </string-array>
+
+    <string-array name="MachineTypeSelfService">
+        <item>Select Machine Type/Software</item>
+        <item>ATM</item>
+        <item>ITM (Terminal)</item>
+        <item>SR</item>
+        <item>Depositor</item>
+        <item>Sfour Bulk Deposit</item>
+        <item>HE Bulk Deposit</item>
+        <item>HE SR</item>
+        <item>GBRU</item>
+        <item>APTRA Vision (Terminal)</item>
+        <item>ICam</item>
+        <item>GBXX</item>
+        <item>Forex</item>
+        <item>CVM</item>
+        <item>SS KIOSK</item>
+        <item>ITM (Server Side)</item>
+        <item>Voice Guidance</item>
+        <item>EJ Logs</item>
+        <item>Software Development</item>
+
+    </string-array>
+
+    <string-array name="PosToms">
+        <item>Select Machine Type/Software</item>
+        <item>POS Development</item>
+        <item>TOMS Monitoring</item>
+
+
+    </string-array>
+    <string-array name="ATM">
+        <item>Select Machine Type/Software</item>
+        <item>ATM</item>
+        <item>ITM (Terminal)</item>
+        <item>SR</item>
+        <item>Depositor</item>
+        <item>Sfour Bulk Deposit</item>
+        <item>HE Bulk Deposit</item>
+        <item>HE SR</item>
+        <item>GBRU</item>
+        <item>APTRA Vision (Terminal)</item>
+        <item>ICam</item>
+        <item>GBXX</item>
+        <item>Forex</item>
+    </string-array>
+
+    <string-array name="VoiceGuidance">
+        <item>Select Machine Type/Software</item>
+        <item>CVM</item>
+        <item>SS KIOSK</item>
+        <item>ITM (Server Side)</item>
+        <item>Voice Guidance</item>
+        <item>EJ Logs</item>
+        <item>Software Development</item>
+
+    </string-array>
+
+    <string-array name="AxisCamera">
+        <item>Select Machine Type/Software</item>
+        <item>Axis Security Camera</item>
+        <item>Card Personnel</item>
+        <item>ITM Instant Issuance</item>
+        <item>PIN Maller</item>
+        <item>Check Scanner</item>
+        <item>APTRA Vision (Server Side)</item>
+        <item>TMS Monitoring Tool</item>
+
+    </string-array>
+
+    <string name="app_logo">App Logo</string> <!-- Add this -->
+    <!-- this is for priority button of add issue page -->
+    <string-array name="priority">
+        <item>Select Priority Level</item>
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+    <!--this is for the status of add issue page-->
+    <string-array name="Status">
+        <item>Select The Current Status of The Issue</item>
+        <item>Open</item>
+        <item>Open Ticket</item>
+        <item>In progress</item>
+    </string-array>
+
+    <string-array name="StatusUpdate">
+        <item>Select The Current Status of The Issue</item>
+        <item>In progress</item>
+        <item>On Hold</item>
+        <item>Waiting for Confirmation</item>
+        <item>Pending</item>
+        <item>Completed</item>
+    </string-array>
+
+
+    <string-array name="StatusUpdateForReport">
+        <item>Select The Current Status of The Issue</item>
+        <item>Open</item>
+        <item>Open Ticket</item>
+        <item>In progress</item>
+        <item>On Hold</item>
+        <item>Waiting for Confirmation</item>
+        <item>Pending</item>
+        <item>Completed</item>
+    </string-array>
+
+    <string-array name="AnnualReport">
+        <item>Select a Time Period for The Annual Report</item>
+        <item>Q1</item>
+        <item>Q2</item>
+        <item>Q3</item>
+        <item>Q4</item>
+        <item>The First 6 Months</item>
+        <item>The Second 6 Months</item>
+        <item>Annual</item>
+
+    </string-array>
+
+    <string-array name="bankName">
+        <item>Select The Bank Name</item>
+        <item>Abay Bank</item>
+        <item>Addis International Bank</item>
+        <item>Ahadu Bank</item>
+        <item>Amhara Bank</item>
+        <item>Anbesa International Bank</item>
+        <item>Awash International Bank</item>
+        <item>Bank of Abyssinia</item>
+        <item>Berhan International Bank</item>
+        <item>Bunna International Bank</item>
+        <item>Commercial Bank of Ethiopia</item>
+        <item>Cooperative Bank of Oromia</item>
+        <item>Dashen Bank</item>
+        <item>Debub Global Bank</item>
+        <item>Enat Bank</item>
+        <item>Gadaa Bank</item>
+        <item>Hibret Bank</item>
+        <item>Hijra Bank</item>
+        <item>Nib International Bank</item>
+        <item>Oromia Bank</item>
+        <item>Rammis Bank</item>
+        <item>Shebelle Bank</item>
+        <item>Siinqee Bank</item>
+        <item>Siket Bank</item>
+        <item>Sidama Bank</item>
+        <item>Tsedey Bank</item>
+        <item>Tsehay Bank</item>
+        <item>Wegagen Bank</item>
+        <item>ZamZam Bank</item>
+        <item>Zemen Bank</item>
+    </string-array>
+
+    <string name="welcome_text">
+    <![CDATA[
+    Take charge of your workplace by reporting issues effortlessly and tracking their resolutions in real-time.
+    ]]>
+</string>
+
+
+    <string name="welcome_text2">
+    <![CDATA[
+ <br><b>What You Can Do:</b><br>- <b>Instant Reporting:</b> Submit issues with just a few taps—no hassle, no delays.<br>- <b>Real-Time Tracking:</b> Stay informed about the status of your requests and their resolutions.<br>- <b>Collaborative Solutions:</b>Work with your team to find effective solutions.
+    ]]>
+</string>
+
+    <!--    <string-array name="machine_type_default">-->
+    <!--        <item>Select Machine Type/Software</item>-->
+    <!--    </string-array>-->
+
+</resources>

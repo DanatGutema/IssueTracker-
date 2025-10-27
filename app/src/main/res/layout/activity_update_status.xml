@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5"
+    tools:context=".Update_Status"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/TitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:text="Update Issue"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:shadowColor="#000000"
+            android:shadowRadius="0"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            tools:ignore="RtlHardcoded" />
+
+        <!-- Issue ID -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="Issue ID"
+            app:hintTextColor="#000000"
+            app:boxBackgroundColor="#E3F2FD"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxStrokeColor="#1E88E5"
+            app:boxStrokeWidth="1.5dp"
+            android:textColorHint="#000000"
+            app:endIconTint="#1E88E5">
+
+            <Spinner
+                android:id="@+id/SerialNumberUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:inputType="number"
+                android:background="@drawable/spinner_box"
+                android:enabled="false"
+                android:textColor="#000000"
+                app:endIconDrawable="@drawable/ic_tag"
+                app:endIconMode="custom"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Issue Title -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Issue Title"
+            app:hintTextColor="#000000"
+            android:textColorHint="#000000"
+            app:boxBackgroundColor="#E3F2FD"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxStrokeColor="#1E88E5"
+            app:boxStrokeWidth="1.5dp"
+            app:endIconDrawable="@drawable/ic_title"
+            app:endIconMode="custom"
+            app:endIconTint="#1E88E5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/IssueTitleUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:enabled="false"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Description -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Description"
+            app:hintTextColor="#000000"
+            android:textColorHint="#000000"
+            app:boxBackgroundColor="#E3F2FD"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxStrokeColor="#1E88E5"
+            app:boxStrokeWidth="1.5dp"
+            app:endIconTint="#1E88E5"
+            app:endIconDrawable="@drawable/ic_description"
+            app:endIconMode="custom"
+            app:counterEnabled="true"
+            app:counterMaxLength="200">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/IssueDesUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:maxLines="3"
+                android:enabled="false"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Bank Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Bank Name"
+            app:hintTextColor="#000000"
+            android:textColorHint="#000000"
+            app:boxBackgroundColor="#E3F2FD"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxStrokeColor="#1E88E5"
+            app:endIconDrawable="@drawable/ic_bank"
+            app:endIconMode="custom"
+            app:boxStrokeWidth="1.5dp"
+            app:endIconTint="#1E88E5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/BankNameUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:enabled="false"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Branch -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Branch"
+            app:hintTextColor="#000000"
+            android:textColorHint="#000000"
+            app:boxBackgroundColor="#E3F2FD"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxStrokeColor="#1E88E5"
+            app:endIconDrawable="@drawable/ic_location"
+            app:endIconMode="custom"
+            app:boxStrokeWidth="1.5dp"
+            app:endIconTint="#1E88E5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/BankLocUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:enabled="false"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Support Engineer -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Support Engineer"
+            app:hintTextColor="#000000"
+            android:textColorHint="#000000"
+            app:boxBackgroundColor="#E3F2FD"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxStrokeColor="#1E88E5"
+            app:endIconDrawable="@drawable/ic_engineer"
+            app:endIconMode="custom"
+            app:boxStrokeWidth="1.5dp"
+            app:endIconTint="#1E88E5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/SupportEngineer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:enabled="false"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Reported Date -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Reported Date"
+            app:hintTextColor="#000000"
+            android:textColorHint="#000000"
+            app:boxBackgroundColor="#E3F2FD"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxStrokeColor="#1E88E5"
+            app:boxStrokeWidth="1.5dp"
+            app:endIconTint="#1E88E5"
+            app:endIconDrawable="@drawable/ic_calendar_picker"
+            app:endIconMode="custom"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/RegDateUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="false"
+                android:enabled="false"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Type Spinner -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Issue Type"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            app:boxBackgroundColor="#E3F2FD"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="#1E88E5"
+            app:boxStrokeWidth="1.5dp"
+            app:endIconMode="custom"
+            app:endIconTint="#1E88E5"
+            app:boxBackgroundMode="outline"
+            app:hintTextColor="#000000">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/TypeSpinnerUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:inputType="none"
+                android:enabled="false"
+                android:entries="@array/type"
+                android:focusable="false"
+                app:boxStrokeColor="#000000" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Machine Type -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Machine Type"
+            app:hintTextColor="#000000"
+            app:boxBackgroundColor="#E3F2FD"
+            app:boxCornerRadiusTopStart="8dp"
+            android:textColorHint="#000000"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxStrokeColor="#1E88E5"
+            app:boxStrokeWidth="1.5dp"
+            app:endIconTint="#1E88E5"
+            app:endIconMode="custom"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/MachineTypeSpinnerUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:enabled="false"
+                android:focusable="false"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Priority -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Priority Level"
+            app:hintTextColor="#000000"
+            app:boxBackgroundColor="#E3F2FD"
+            android:textColorHint="#000000"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxStrokeColor="#1E88E5"
+            app:boxStrokeWidth="1.5dp"
+            app:endIconMode="custom"
+            app:endIconTint="#1E88E5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tvPriorityLevel"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:entries="@array/priority"
+                android:enabled="false"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Status -->
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="#000000"-->
+<!--            android:hint="Status"-->
+<!--            app:hintTextColor="#000000"-->
+<!--            android:textColorHint="#000000"-->
+<!--            app:boxBackgroundColor="#E3F2FD"-->
+<!--            app:boxCornerRadiusTopStart="8dp"-->
+<!--            app:boxCornerRadiusTopEnd="8dp"-->
+<!--            app:boxStrokeColor="#1E88E5"-->
+<!--            app:boxStrokeWidth="1.5dp"-->
+<!--            app:endIconMode="custom"-->
+<!--            android:paddingTop="0dp"-->
+<!--            android:paddingBottom="0dp"-->
+<!--            app:endIconTint="#1E88E5">-->
+
+            <Spinner
+                android:id="@+id/StatusSpinnerUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_marginTop="25dp"
+                android:entries="@array/StatusUpdate"
+                android:background="@drawable/spinner_box"
+                android:textColor="#000000"
+                />
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+        <!-- Result -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+
+            app:hintTextColor="#000000"
+            android:textColorHint="#000000"
+            app:boxBackgroundColor="#E3F2FD"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxStrokeColor="#1E88E5"
+            app:boxStrokeWidth="1.5dp"
+
+            app:counterMaxLength="200">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:maxLines="3"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- resolved date -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:hint="Resolved/In Progress Date"
+            app:hintTextColor="#000000"
+            android:textColorHint="#000000"
+            app:boxBackgroundColor="#E3F2FD"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxStrokeColor="#1E88E5"
+            app:boxStrokeWidth="1.5dp"
+            app:endIconMode="custom"
+            app:endIconTint="#1E88E5">
+
+            <EditText
+                android:id="@+id/ResolvedDateUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:entries="@array/Status"
+
+                android:textColor="#000000"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Add Button -->
+        <Button
+            android:id="@+id/ButtonUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginHorizontal="32dp"
+            android:backgroundTint="#1565C0"
+            android:elevation="4dp"
+            android:text="Save Issue"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="28dp"
+            app:icon="@drawable/ic_add"
+            app:iconTint="#FFFFFF"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp" />
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+<!--    android:background="@drawable/spinner_box" this is what i removed from the issue tpe and all-->

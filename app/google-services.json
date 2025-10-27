@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "421779472563",
+    "project_id": "issuetracker-92182",
+    "storage_bucket": "issuetracker-92182.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421779472563:android:3d76032d3bd09877d830c6",
+        "android_client_info": {
+          "package_name": "com.example.issuetracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfNxNJ7tVffzK9kxbPauF_WnZ9rLk7-LA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

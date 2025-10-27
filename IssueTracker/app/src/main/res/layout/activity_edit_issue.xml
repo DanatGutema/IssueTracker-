@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5"
+    tools:context=".EditIssue">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/EditTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="97dp"
+            android:layout_marginTop="40dp"
+            android:text="Edit Issue"
+            android:textAlignment="center"
+            android:textColor="#FFFFF5"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/SerialTextEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:text="Issue ID:"
+                android:textColor="#000000" />
+
+
+            <EditText
+                android:id="@+id/SerialNumberEdit"
+                android:layout_width="185dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_box_bg"
+                android:ems="10"
+                android:textColor="#525151"
+                android:textColorHint="#525151"
+                android:paddingStart="12dp"
+                android:textSize="14sp"
+                android:enabled="false"
+                android:inputType="number"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.77"
+                app:layout_constraintStart_toEndOf="@+id/SerialText"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.847" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/IssueTextEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Issue Title:"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/IssueTitleEdit"
+                android:layout_width="185dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="29dp"
+                android:background="@drawable/edittext_box_bg"
+                android:ems="10"
+                android:hint="#"
+                android:paddingStart="12dp"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:textColor="#000000"
+                android:textColorHint="#525151"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.666"
+                app:layout_constraintStart_toEndOf="@+id/IssueText" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/DesTextEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Description:"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/IssueDesEdit"
+                android:layout_width="180dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="26dp"
+                android:background="@drawable/edittext_box_bg"
+                android:ems="10"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:hint="#"
+                android:paddingStart="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#525151"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.367"
+                app:layout_constraintStart_toEndOf="@+id/DesText" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/BankTextEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Bank Name:"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/BankNameEdit"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/edittext_box_bg"
+                android:ems="10"
+                android:hint="#"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:paddingStart="12dp"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:textColorHint="#525151"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/BankText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/BranchTextEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Branch:"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/BankLocEdit"
+                android:layout_width="182dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="55dp"
+                android:background="@drawable/edittext_box_bg"
+                android:ems="10"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:hint="#"
+                android:paddingStart="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#525151"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.425"
+                app:layout_constraintStart_toEndOf="@+id/BranchText" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/SupportTextEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Support Engineer:"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/SupportEdit"
+                android:layout_width="175dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="55dp"
+                android:background="@drawable/edittext_box_bg"
+                android:ems="10"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:hint="#"
+                android:paddingStart="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#525151"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.425"
+                app:layout_constraintStart_toEndOf="@+id/BranchText" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/DateTextEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:text="Reported Date:"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/RegDateEdit"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/edittext_box_bg"
+                android:clickable="true"
+                android:textSize="14sp"
+                android:ems="10"
+                android:textStyle="italic"
+                android:paddingStart="12dp"
+                android:focusable="false"
+                android:hint="Select Date"
+                android:textColor="#000000"
+                android:textColorHint="#525151"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- focusable Important: prevent keyboard -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/TypeTextEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Type:"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Spinner
+                android:id="@+id/TypeSpinnerEdit"
+                android:layout_width="177dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/edittext_box_bg"
+                android:clickable="true"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:cursorVisible="false"
+                android:textColor="#000000"
+                android:textColorHint="#525151"
+                android:paddingStart="12dp"
+                android:entries="@array/type"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.729"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/MachineTypeTextEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Machine Type:"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Spinner
+                android:id="@+id/MachineTypeSpinnerEdit"
+                android:layout_width="177dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="14dp"
+                android:background="@drawable/edittext_box_bg"
+                android:clickable="true"
+                android:textSize="14sp"
+                android:cursorVisible="false"
+                android:textColor="#000000"
+                android:textColorHint="#525151"
+                android:textStyle="italic"
+                android:paddingStart="12dp"
+                android:entries="@array/MachineType"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.729"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/PriorityTextEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Priority Level:"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Spinner
+                android:id="@+id/prioritySpinnerEdit"
+                android:layout_width="177dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="17dp"
+                android:background="@drawable/edittext_box_bg"
+                android:clickable="true"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:cursorVisible="false"
+                android:textColor="#000000"
+                android:textColorHint="#525151"
+                android:paddingStart="12dp"
+                android:entries="@array/priority"
+                android:focusable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.729"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/StatusTextEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Status:"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/StatusSpinnerEdit"
+                android:layout_width="182dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="60dp"
+                android:background="@drawable/edittext_box_bg"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:entries="@array/Status"
+                android:focusable="true"
+                android:paddingStart="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#525151"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.629"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="233dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ButtonAddEdit"
+            android:layout_width="202dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#407AD5"
+            android:text="Save Change"
+            android:textColor="#FFFFF5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.456"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </LinearLayout>
+</ScrollView>

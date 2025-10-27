@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Issue Tracker</string>
+    <!-- this is for the roles in registration-->
+    <string-array name="roles">
+        <item>Select Role</item>
+
+        <item>Admin</item>
+        <item>Manager</item>
+        <item>Employee</item>
+
+    </string-array>
+    <string-array name="dept">
+        <item>Select Department</item>
+
+        <item>PSS</item>
+        <item>Sales</item>
+        <item>HR</item>
+
+    </string-array>
+    <string-array name="type">
+        <item>Select Type</item>
+        <item>Project</item>
+        <item>Support</item>
+
+    </string-array>
+
+    <string-array name="MachineType">
+        <item>Select Machine Type</item>
+        <item>ATM</item>
+        <item>ITM</item>
+        <item>POS</item>
+        <item>S4Bulk</item>
+        <item>HiBulk </item>
+        <item>CVM</item>
+        <item>Kiosk</item>
+        <item>SR</item>
+
+    </string-array>
+
+    <string name="app_logo">App Logo</string> <!-- Add this -->
+    <!-- this is for priority button of add issue page -->
+    <string-array name="priority">
+        <item>Select Priority Level</item>
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+    <!--this is for the status of add issue page-->
+    <string-array name="Status">
+        <item>Select The Current Status of The Issue</item>
+        <item>Open</item>
+        <item>In progress</item>
+    </string-array>
+
+    <string-array name="StatusUpdate">
+        <item>Select The Current Status of The Issue</item>
+        <item>In progress</item>
+        <item>Resolved</item>
+    </string-array>
+
+</resources>

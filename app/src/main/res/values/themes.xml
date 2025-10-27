@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.IssueTracker" parent="Theme.Material3.DayNight.NoActionBar">
+<!--    <style name="Base.Theme.IssueTracker" parent="Theme.MaterialComponents.DayNight.NoActionBar">-->
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    </style>
+
+    <!-- App theme inherits from Base -->
+    <style name="Theme.IssueTracker" parent="Base.Theme.IssueTracker" />
+</resources>

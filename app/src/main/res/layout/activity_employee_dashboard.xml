@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg5"
+    tools:context=".Dashboard">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="400dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="1dp"
+        android:background="#3970C2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="297dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="22dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:padding="1dp"
+        android:text="Dashboard"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/btnIssueListEmployee"
+        android:layout_width="261dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#407AD5"
+        android:padding="10dp"
+        android:text="Register Issues"
+        android:textColor="#FFFFF5"
+        android:textSize="17sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnStatusEmployee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/btnStatusEmployee"
+        android:layout_width="261dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="18dp"
+        android:backgroundTint="#407AD5"
+        android:text="Update Status"
+        android:textColor="#FFFFF5"
+        android:textSize="17sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnReportsEmployee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnReportsEmployee"
+        android:layout_width="261dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="368dp"
+        android:backgroundTint="#407AD5 "
+        android:text="Generate Report"
+        android:textColor="#FFFFF5"
+        android:textSize="17sp"
+
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <!--
+        <Button
+            android:id="@+id/btnRemindersEmployee"
+            android:layout_width="261dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="104dp"
+            android:backgroundTint="#407AD5"
+            android:text="Set Reminder"
+            android:textColor="#FFFFF5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnReportsEmployee" />
+    -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

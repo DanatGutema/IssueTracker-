@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RootReport"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newbg"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- Top Row: Search + Date Range -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <!-- Search: bank or machine type -->
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="0dp"
+            android:layout_height="43.5dp"
+            android:layout_weight="0.61"
+            android:background="#F6F6F6"
+            android:hint="Search by bank or machine"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:paddingStart="20dp"
+            android:textColor="#000000"
+            android:textColorHint="#666666"
+            />
+
+        <ImageView
+            android:id="@+id/iconArrow"
+            android:layout_width="28dp"
+            android:layout_height="43.5dp"
+            android:contentDescription="arrow"
+            android:background="#F6F6F6"
+            android:src="@drawable/ic_arrow_down" />
+
+        <!-- Date Range box -->
+        <LinearLayout
+            android:id="@+id/DateBox"
+            android:layout_width="0dp"
+            android:layout_height="43.5dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="0.35"
+            android:background="#F6F6F6"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/ivCalendar"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Calendar"
+                android:src="@android:drawable/ic_menu_my_calendar" />
+            <TextView
+                android:id="@+id/tvDateRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All dates"
+                android:background="#F6F6F6"
+                android:layout_marginStart="8dp"
+                android:textColor="#666666"
+                android:textColorHint="#666666"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Download icon aligned right -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/ivDownload"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="Download"
+            android:padding="6dp"
+            android:visibility="gone"
+            android:src="@drawable/outline_arrow_downward_24" />
+    </LinearLayout>
+
+    <!-- Table area: vertical scroll + horizontal scroll -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg5"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal">
+
+            <TableLayout
+                android:id="@+id/tableReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1,2" />
+
+        </HorizontalScrollView>
+    </ScrollView>
+</LinearLayout>
